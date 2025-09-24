@@ -1,7 +1,7 @@
 class Produto:
     def __init__(self, id_produto: int, nome: str, preco: float):
         self.id_produto = id_produto
-        self._nome = nome   # usa atributo "privado" (convenção com underline)
+        self._nome = nome   
         self.preco = preco
 
     @property
