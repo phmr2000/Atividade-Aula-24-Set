@@ -21,7 +21,7 @@ class Produto:
     @preco.setter
     def preco(self, novo_preco: float):
         if novo_preco <= 0:
-            raise ValueError("O preço do produto não pode ser negativo.")
+            raise ValueError("O preço do produto deve ser maior que zero.")
         self._preco = novo_preco
 
     def __repr__(self):
